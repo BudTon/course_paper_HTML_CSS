@@ -190,7 +190,20 @@ header {
     z-index: 1;
 }
 
-.h3-trend:hover {
+.h3-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.h3-list-link {
+    padding-right: 22px;
+    margin-top: 0;
+}
+
+.h3-list-link:hover {
     text-decoration: underline;
 }
 
@@ -214,7 +227,7 @@ header {
 
 .post {
     width: 1170px;
-    height: 1770px;
+    min-height: 1770px;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -230,32 +243,25 @@ header {
     padding-top: 60px;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: start;
 }
 
 .img-post {
+    display: flex;
     width: 381px;
     height: 294px;
     background-size: cover;
     background-color: #fff;
+    align-items: start;
 }
 
 .frame-post {
     width: 58%;
-    height: 294px;
+    min-height: 294px;
     display: flex;
     flex-direction: column;
     padding-right: 120px;
     padding-left: 30px;
-}
-
-.title-post-list-item {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.title-post-list-item:hover {
-    text-decoration: underline;
 }
 
 .h2-trend {
@@ -306,6 +312,7 @@ header {
     color: #0f0d0e;
     font-weight: 400;
     font-family: "Open Sans regal";
+    margin: 0;
 }
 
 .side-bar {
